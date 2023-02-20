@@ -4,7 +4,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
 public class ModCreativeModeTab {
-    public static final CreativeModeTab FIRSTMOD_TAB = new CreativeModeTab("eterustab") {
+    public static final CreativeModeTab ETERUSMOD_TAB = new CreativeModeTab("eterustab") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.ETERIUM.get());

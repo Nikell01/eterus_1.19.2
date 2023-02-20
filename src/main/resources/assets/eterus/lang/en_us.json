@@ -1,0 +1,10 @@
+{
+  "item.eterus.eterium": "Eterium",
+  "item.eterus.raw_eterium": "Raw Eterium",
+
+  "block.eterus.eterium_block":"Block of Eterium",
+  "block.eterus.eterium_ore":"Eterium Ore",
+  "block.eterus.deepslate_eterium_ore":"Deepslate Eterium Ore",
+
+  "itemGroup.eterustab": "Eterus Mod"
+}
