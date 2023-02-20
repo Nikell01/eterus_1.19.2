@@ -14,7 +14,6 @@ import net.nikell.eterus.item.ModItems;
 import org.slf4j.Logger;
 
 //Main Mod Method
-
 @Mod(EterusMod.MOD_ID)
 public class EterusMod {
     public static final String MOD_ID = "eterus";
