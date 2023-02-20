@@ -1,4 +1,4 @@
-package net.nikell.firstmod;
+package net.nikell.eterus;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -9,16 +9,19 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.nikell.eterus.item.ModItems;
 import org.slf4j.Logger;
 
 
-@Mod(FirstMod.MOD_ID)
-public class FirstMod {
-    public static final String MOD_ID = "firstmod";
+@Mod(EterusMod.MOD_ID)
+public class EterusMod {
+    public static final String MOD_ID = "eterus";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public FirstMod() {
+    public EterusMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
