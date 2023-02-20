@@ -13,6 +13,7 @@ import net.nikell.eterus.block.ModBlocks;
 import net.nikell.eterus.item.ModItems;
 import org.slf4j.Logger;
 
+//Main Mod Method
 
 @Mod(EterusMod.MOD_ID)
 public class EterusMod {
