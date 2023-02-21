@@ -23,16 +23,16 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, EterusMod.MOD_ID);
 
     public static final RegistryObject<Block> ETERIUM_BLOCK = registerBlock("eterium_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
             .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.ETERUSMOD_TAB);
 
     public static final RegistryObject<Block> ETERIUM_ORE = registerBlock("eterium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-            .strength(6f).requiresCorrectToolForDrops(),
+            .strength(4f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.ETERUSMOD_TAB);
     public static final RegistryObject<Block> DEEPSLATE_ETERIUM_ORE = registerBlock("deepslate_eterium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops(),
+                    .strength(4f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.ETERUSMOD_TAB);
 
 
