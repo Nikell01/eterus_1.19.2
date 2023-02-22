@@ -1,10 +1,12 @@
 {
   "item.eterus.eterium": "Eterium",
   "item.eterus.raw_eterium": "Raw Eterium",
+  "item.eterus.eight_ball": "Eight Ball",
 
   "block.eterus.eterium_block":"Block of Eterium",
   "block.eterus.eterium_ore":"Eterium Ore",
   "block.eterus.deepslate_eterium_ore":"Deepslate Eterium Ore",
+  "block.eterus.pathway_air_block":"Air Pathway",
 
   "itemGroup.eterustab": "Eterus Mod"
 }

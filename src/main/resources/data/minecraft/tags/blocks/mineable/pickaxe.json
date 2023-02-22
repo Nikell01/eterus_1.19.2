@@ -3,6 +3,7 @@
   "values": [
     "eterus:eterium_block",
     "eterus:eterium_ore",
-    "eterus:deepslate_eterium_ore"
+    "eterus:deepslate_eterium_ore",
+    "eterus:pathway_air_block"
   ]
 }
