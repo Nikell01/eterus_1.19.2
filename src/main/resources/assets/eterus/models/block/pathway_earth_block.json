@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "eterus:block/pathway_earth_block_bottom",
+    "side": "eterus:block/pathway_earth_block_side",
+    "top": "eterus:block/pathway_earth_block_top"
+  }
+}

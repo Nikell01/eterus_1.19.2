@@ -4,6 +4,9 @@
     "eterus:eterium_block",
     "eterus:eterium_ore",
     "eterus:deepslate_eterium_ore",
-    "eterus:pathway_air_block"
+    "eterus:pathway_air_block",
+    "eterus:pathway_fire_block",
+    "eterus:pathway_water_block",
+    "eterus:pathway_earth_block"
   ]
 }

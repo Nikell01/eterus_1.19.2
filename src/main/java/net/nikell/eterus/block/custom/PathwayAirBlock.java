@@ -32,6 +32,7 @@ public class PathwayAirBlock extends Block {
         if(entity instanceof LivingEntity livingEntity){
             livingEntity.addEffect(new MobEffectInstance(MobEffects.JUMP, 100));
             livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 1));
+
         }
 
         super.stepOn(level, pos, state, entity);

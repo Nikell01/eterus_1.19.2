@@ -14,6 +14,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nikell.eterus.EterusMod;
 import net.nikell.eterus.block.custom.PathwayAirBlock;
+import net.nikell.eterus.block.custom.PathwayEarthBlock;
+import net.nikell.eterus.block.custom.PathwayFireBlock;
+import net.nikell.eterus.block.custom.PathwayWaterBlock;
 import net.nikell.eterus.item.ModCreativeModeTab;
 import net.nikell.eterus.item.ModItems;
 
@@ -36,8 +39,18 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.ETERUSMOD_TAB);
 
-    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("pathway_air_block",
+    //Pathways
+    public static final RegistryObject<Block> PATHWAY_AIR_BLOCK = registerBlock("pathway_air_block",
             () -> new PathwayAirBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.ETERUSMOD_TAB);
+    public static final RegistryObject<Block> PATHWAY_FIRE_BLOCK = registerBlock("pathway_fire_block",
+            () -> new PathwayFireBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.ETERUSMOD_TAB);
+    public static final RegistryObject<Block> PATHWAY_WATER_BLOCK = registerBlock("pathway_water_block",
+            () -> new PathwayWaterBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.ETERUSMOD_TAB);
+    public static final RegistryObject<Block> PATHWAY_EARTH_BLOCK = registerBlock("pathway_earth_block",
+            () -> new PathwayEarthBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.ETERUSMOD_TAB);
 
 
