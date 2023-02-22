@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 500,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "eterus:clean_elemental_shard"
+  },
+  "result": "eterus:fire_elemental_shard"
+}
