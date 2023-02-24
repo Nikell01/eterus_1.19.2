@@ -5,6 +5,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -13,10 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nikell.eterus.EterusMod;
-import net.nikell.eterus.block.custom.PathwayAirBlock;
-import net.nikell.eterus.block.custom.PathwayEarthBlock;
-import net.nikell.eterus.block.custom.PathwayFireBlock;
-import net.nikell.eterus.block.custom.PathwayWaterBlock;
+import net.nikell.eterus.block.custom.*;
 import net.nikell.eterus.item.ModCreativeModeTab;
 import net.nikell.eterus.item.ModItems;
 
@@ -42,16 +40,25 @@ public class ModBlocks {
     //Pathways
     public static final RegistryObject<Block> PATHWAY_AIR_BLOCK = registerBlock("pathway_air_block",
             () -> new PathwayAirBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.ETERUSMOD_TAB);
+                    .strength(3f)), ModCreativeModeTab.ETERUSMOD_TAB);
     public static final RegistryObject<Block> PATHWAY_FIRE_BLOCK = registerBlock("pathway_fire_block",
             () -> new PathwayFireBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.ETERUSMOD_TAB);
+                    .strength(3f)), ModCreativeModeTab.ETERUSMOD_TAB);
     public static final RegistryObject<Block> PATHWAY_WATER_BLOCK = registerBlock("pathway_water_block",
             () -> new PathwayWaterBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.ETERUSMOD_TAB);
+                    .strength(3f)), ModCreativeModeTab.ETERUSMOD_TAB);
     public static final RegistryObject<Block> PATHWAY_EARTH_BLOCK = registerBlock("pathway_earth_block",
             () -> new PathwayEarthBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.ETERUSMOD_TAB);
+                    .strength(3f)), ModCreativeModeTab.ETERUSMOD_TAB);
+
+    public static final RegistryObject<Block> ETERIUM_LAMP = registerBlock("eterium_lamp",
+            () -> new EteriumLampBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(3f).lightLevel(state -> state.getValue(EteriumLampBlock.LIT) ? 15 : 0)), ModCreativeModeTab.ETERUSMOD_TAB);
+
+    //Crops
+    public static final RegistryObject<Block> HOP_CROP = BLOCKS.register("hop_crop",
+            () -> new HopCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

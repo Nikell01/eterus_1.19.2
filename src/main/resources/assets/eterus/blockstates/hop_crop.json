@@ -1,0 +1,11 @@
+{
+   "variants": {
+     "age=0": {"model": "eterus:block/hop_stage0"},
+     "age=1": {"model": "eterus:block/hop_stage1"},
+     "age=2": {"model": "eterus:block/hop_stage2"},
+     "age=3": {"model": "eterus:block/hop_stage3"},
+     "age=4": {"model": "eterus:block/hop_stage4"},
+     "age=5": {"model": "eterus:block/hop_stage5"},
+     "age=6": {"model": "eterus:block/hop_stage6"}
+   }
+}

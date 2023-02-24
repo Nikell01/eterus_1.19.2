@@ -7,6 +7,10 @@
   "item.eterus.air_elemental_shard": "Air Elemental Shard",
   "item.eterus.earth_elemental_shard": "Earth Elemental Shard",
   "item.eterus.water_elemental_shard": "Water Elemental Shard",
+  "item.eterus.hop": "Hop",
+  "item.eterus.hop_seeds": "Hop Seeds",
+
+  "item.eterus.test_food": "Test Food",
 
   "item.eterus.eight_ball": "Eight Ball",
 
@@ -15,6 +19,12 @@
   "block.eterus.deepslate_eterium_ore":"Deepslate Eterium Ore",
   "block.eterus.pathway_air_block":"Air Pathway",
   "block.eterus.pathway_fire_block":"Fire Pathway",
+  "block.eterus.pathway_water_block":"Water Pathway",
+  "block.eterus.pathway_earth_block":"Earth Pathway",
+  "block.eterus.eterium_lamp":"Eterium Lamp",
+  "block.eterus.hop_crop":"Hop Crop",
 
-  "itemGroup.eterustab": "Eterus Mod"
+  "itemGroup.eterustab": "Eterus Mod",
+
+  "entity.minecraft.villager.eterus.mystery_brewmaster": "Mystery Brewmaster"
 }

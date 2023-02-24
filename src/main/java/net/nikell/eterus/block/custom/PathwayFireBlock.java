@@ -20,6 +20,7 @@ public class PathwayFireBlock extends Block {
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof LivingEntity livingEntity){
             livingEntity.setSecondsOnFire(2);
+
         }
 
         super.stepOn(level, pos, state, entity);
