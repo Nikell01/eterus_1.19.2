@@ -28,11 +28,20 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
             .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.ETERUSMOD_TAB);
 
+    //Ores
     public static final RegistryObject<Block> ETERIUM_ORE = registerBlock("eterium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
             .strength(4f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.ETERUSMOD_TAB);
     public static final RegistryObject<Block> DEEPSLATE_ETERIUM_ORE = registerBlock("deepslate_eterium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3,7)), ModCreativeModeTab.ETERUSMOD_TAB);
+    public static final RegistryObject<Block> NETHERRACK_ETERIUM_ORE = registerBlock("netherrack_eterium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3,7)), ModCreativeModeTab.ETERUSMOD_TAB);
+    public static final RegistryObject<Block> END_ETERIUM_ORE = registerBlock("end_eterium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(4f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.ETERUSMOD_TAB);

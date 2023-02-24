@@ -3,6 +3,8 @@
   "values": [
     "eterus:eterium_block",
     "eterus:eterium_ore",
-    "eterus:deepslate_eterium_ore"
+    "eterus:deepslate_eterium_ore",
+    "eterus:netherrack_eterium_ore",
+    "eterus:end_eterium_ore"
   ]
 }

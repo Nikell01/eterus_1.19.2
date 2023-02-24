@@ -15,6 +15,8 @@ import net.nikell.eterus.block.ModBlocks;
 import net.nikell.eterus.item.ModItems;
 import net.nikell.eterus.painting.ModPaintings;
 import net.nikell.eterus.villager.ModVillagers;
+import net.nikell.eterus.world.feature.ModConfiguredFeatures;
+import net.nikell.eterus.world.feature.ModPlacedFeatures;
 import org.slf4j.Logger;
 
 //Main Mod Method
@@ -28,10 +30,11 @@ public class EterusMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
         ModVillagers.register(modEventBus);
-
         ModPaintings.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

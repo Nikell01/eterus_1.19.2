@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "eterus:nether_eterium_ore_placed",
+  "step": "underground_ores"
+}
