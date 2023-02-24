@@ -2,5 +2,6 @@
   "parent": "block/crop",
   "textures": {
     "crop": "eterus:block/hop_stage2"
-  }
+  },
+  "render_type": "cutout"
 }
