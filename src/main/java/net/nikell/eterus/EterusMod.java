@@ -13,6 +13,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.nikell.eterus.block.ModBlocks;
 import net.nikell.eterus.item.ModItems;
+import net.nikell.eterus.painting.ModPaintings;
 import net.nikell.eterus.villager.ModVillagers;
 import org.slf4j.Logger;
 
@@ -29,6 +30,8 @@ public class EterusMod {
         ModBlocks.register(modEventBus);
 
         ModVillagers.register(modEventBus);
+
+        ModPaintings.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
