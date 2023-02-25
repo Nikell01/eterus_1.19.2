@@ -25,6 +25,10 @@ public class ModItems {
     //Advanced Resources
     public static final RegistryObject<Item> ETERIUM_DUST = ITEMS.register("eterium_dust",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ETERUSMOD_TAB)));
+    public static final RegistryObject<Item> MYSTERY_STEEL = ITEMS.register("mystery_steel",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ETERUSMOD_TAB)));
+    public static final RegistryObject<Item> RAW_MYSTERY_STEEL = ITEMS.register("raw_mystery_steel",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ETERUSMOD_TAB)));
 
     public static final RegistryObject<Item> CLEAN_ELEMENTAL_SHARD = ITEMS.register("clean_elemental_shard",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ETERUSMOD_TAB)));
