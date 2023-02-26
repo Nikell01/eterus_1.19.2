@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 200,
+  "experience": 1,
+  "group": "mystery_steel",
+  "ingredient": {
+    "item": "eterus:raw_mystery_steel"
+  },
+  "result": "eterus:mystery_steel"
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "eterium_dust",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "item": "eterus:eterium_dust"
+    },
+    {
+      "item": "eterus:eterium_dust"
+    },
+    {
+      "item": "eterus:eterium_dust"
+    },
+    {
+      "item": "eterus:eterium_dust"
+    }
+  ],
+  "result": {
+    "item": "eterus:raw_mystery_steel"
+  }
+}

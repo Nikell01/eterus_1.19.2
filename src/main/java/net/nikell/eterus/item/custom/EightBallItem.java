@@ -6,6 +6,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -28,7 +30,35 @@ public class EightBallItem extends Item {
             // Output a Random Number
             outputRandomNumber(player);
             // Set a Cooldown
-            player.getCooldowns().addCooldown(this, 20);
+            player.getCooldowns().addCooldown(this, 200);
+            //Add Player Effects
+            if(getRandomNumber() == 0) {
+                player.addEffect(new MobEffectInstance(MobEffects.WITHER, 200));
+            }
+            if(getRandomNumber() == 1) {
+                player.addEffect(new MobEffectInstance(MobEffects.POISON, 200));
+            }
+            if(getRandomNumber() == 2) {
+                player.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 600));
+            }
+            if(getRandomNumber() == 3) {
+                player.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 500));
+            }
+            if(getRandomNumber() == 4) {
+                player.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 400, 2));
+            }
+            if(getRandomNumber() == 5) {
+                player.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 200));
+            }
+            if(getRandomNumber() == 6) {
+                player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 500,1));
+            }
+            if(getRandomNumber() == 7) {
+                player.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 800));
+            }
+            if(getRandomNumber() == 8) {
+                player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 1000, 2));
+            }
         }
 
         return super.use(level, player, interactionHand);
